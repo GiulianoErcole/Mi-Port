@@ -13,7 +13,7 @@ def scan_ports(target, ports):
 
 def main():
 	target_host = input("Enter the target host to scan: ")
-	target_ports = range(1, 1025)  # Scan common ports (1-1024)
+	target_ports = range(1, 1025)  # it's set to scan common ports (1-1024)
 	
 	open_ports = scan_ports(target_host, target_ports)
 	
